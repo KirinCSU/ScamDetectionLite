@@ -1,0 +1,8 @@
+flask
+openai
+anthropic
+google-generativeai
+requests
+python-dotenv
+gunicorn
+flask_cors
