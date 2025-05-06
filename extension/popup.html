@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Email Scan Result</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h2>Scam Detection</h2>
+  <textarea id="inputText" placeholder="Paste email or text here..."></textarea>
+  <button id="checkButton">Check For Scam</button>
+  <div id="result">Result: (none yet)</div>
+  <div id="barContainer">
+    <div id="scamBar"></div>
+  </div>
+  <label for="detectionModel">Detection Model</label>
+  <select id="detectionModel">
+    <option value="" selected>Ensemble</option>
+    <option value="0">ChatGPT</option>
+    <option value="1">Claude</option>
+    <option value="2">Gemini</option>
+  </select>
+  <div id="loadingSpinner" class="spinner hidden"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
